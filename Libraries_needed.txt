@@ -1,0 +1,11 @@
+selenium
+requests
+bs4
+pandas
+numpy
+matplotlib
+seaborn
+spacy
+nltk
+textblob
+IPython
