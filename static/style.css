@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.header {
+  padding: 1px;
+  text-align: center;
+  background: #186c70;
+  color: white;
+  /*text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;*/
+}
+.header h1 {
+  font-size: 70px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.fakeimg {
+    background-color: #333333;
+    width: 93%;
+    padding: 20px;
+    color: white;
+    font-size: large;
+}
+
+.fakeimg:hover{
+  background-color: #186c70;
+}
+
+
+.fakeimg2 {
+    background-color: #333333;
+    width: 73%;
+    padding: 20px;
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+.fakeimg2:hover{
+  background-color: #186c70;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+.explore_button {
+    background-color: #3e3f40;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+}
+
+.explore_button:hover{
+  background-color: #186c70;
+}
+
+.describe
+{
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+.button_section{
+  text-align: center;
+  align-items: center;
+  font-size: xx-large;
+  padding-left: 200px;
+}
+
+.categories {
+  font-size: x-large;
+}
+
+#domain_list{
+  font-size: x-large;
+}

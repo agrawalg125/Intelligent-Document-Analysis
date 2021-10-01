@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IDA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="header"> <!-- style="background-image: url(icon6.jpg);"> -->
+  <h1 >INTELLIGENT DOCUMENT ANALYSIS</h1>
+  <p><b>A Document Analyzer Tool</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <!-- <a href="#" >Explore</a> -->
+  <!-- <a href="#" class="right">About</a> -->
+  <!-- <a href="#" class="right">Contact Us</a> -->
+<!--   <a href="#" class="right">Link</a> -->
+</div>
+
+<div class="row">
+  <div class="side">
+<!--     <h2>About Me</h2>
+    <h5>Photo of me:</h5> -->
+    <div style="height:200px;"><img src="/static/icon2.jfif"></div>
+    <p>Searching Insights ?</p>
+    <!-- <h3>More Text</h3> -->
+    <p><u>Here you will find</u></p>
+    <div class="fakeimg" style="height:60px;">Named-enity relationship</div><br>
+    <div class="fakeimg" style="height:60px;">Dependency pattern</div><br>
+    <div class="fakeimg" style="height:60px;">Sentiment Analysis</div>
+  </div>
+  <div class="main">
+    <!-- <h2>IDA</h2> -->
+<!--     <h5>Title description, Dec 7, 2017</h5> -->
+<div>
+    <!-- <div class="" style="height:400px;background-image: url('icon4.jpg');background-repeat: no-repeat;"></div>   -->
+    <img src="/static/icon4.jpg" align="left" hspace="50"/>
+    <div style="height:10px;"></div>
+    <p class="describe">
+      A tool that uses NLP to get the insights of the data. Here you can select a domain and we will fetch some live data related to that topic and then processing is done using various nlp libaries and other modules.
+    Using one of the sentence from the fetched data, the named-entity relationship is shown,alongwith that one dependency pattern is also shown that provides how words are inter-related in a sentence and also, the sentiment analysis of the entire data is done which is shown as a graph. 
+    All of the mentioned images and graphs can be viewed by clicking on the respective buttons on the next page that will redirect the user to the given page.
+
+    Also,the top entity data and the data after sentiment analysis that provides the sentiment(Positive, Negative , Neutral) alongwith its sentiment score that can be found in the local folder.
+     </p>
+  
+</div>
+</div>
+</div>
+<div >
+    <div class="button_section">
+      <form action="/next_page" method="POST">
+        <label for="domains">Choose a domain from the list:</label>
+        <select name="Domain_list" id="domain_list">
+          <option class="categories" value="all">All types</option>
+          <option class="categories" value="India">India</option>
+          <option class="categories" value="Business">Business</option>
+          <option class="categories" value="sports">Sports</option>
+          <option class="categories" value="World">World</option>
+          <option class="categories" value="Politics">Politics</option>
+          <option class="categories" value="Technology">Technology</option>
+          <option class="categories" value="Entertainment">Entertainment</option>
+          <option class="categories" value="Science">Science</option>
+          <option class="categories" value="Automobile">Automobile</option>
+        </select>
+        <!-- <br><br> -->
+        <button type="submit" style="font-size: x-large;">Submit</button>
+      </form>
+</div>
+<br>
+<br>
+<br>
+      <!-- <button class="explore_button">Go</button> -->
+    </div>
+
+<div class="footer">
+  <h2></h2>
+</div>
+
+</body>
+</html>
